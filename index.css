@@ -1,5 +1,107 @@
-.c.img{
-  height: 90%;
-  object-fit: cover;
-  opacity: 10%;
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s, color 0.3s;
 }
+
+.profile-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  transition: background-color 0.3s, color 0.3s;
+  line-height: 10px;
+}
+.profile-image img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.time{
+  position: relative;
+  left: 7.5pc;
+  font-weight: bold;
+}
+.profile-info p {
+  color: #666;
+  font-size: 10px;
+}
+.sociallinks a{
+  color: blue;
+}
+.sociallinks a:hover{
+  color: teal;
+}
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.button {
+  color: #201a1a;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  position: relative;
+  bottom: 20px;
+  left: 75px;
+}
+
+.button:hover {
+  color: gray;
+  text-transform: uppercase;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-theme .profile-card {
+  background-color: #444;
+  color: #fff;
+}
+
+body.dark-theme .profile-info p {
+  color: #ccc;
+}
+body.dark-theme .themeToggle{
+  mix-blend-mode: difference;
+}
+body.dark-theme .location{
+  color: white;
+}
+body.dark-theme .button{
+  color: wheat;
+}
+
+
+
